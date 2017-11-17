@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="BookShopAdmin.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookShopAdmin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:BookShopAdmin"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Add Book" Grid.ColumnSpan="4" FontSize="45" FontWeight="Bold" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Text="Name Book:" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+        <TextBox Name="namebook" Width="200" Height="35" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <TextBlock Text="Author Book:" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+        <TextBox Name="authorbook" Width="200" Height="35" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <TextBlock Text="Category:" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+        <TextBox Name="category" Width="200" Height="35" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <TextBlock Text="Price:" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+        <TextBox Name="price" Width="200" Height="35" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <TextBlock Text="Description:" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0" />
+        <TextBox Name="description" Width="200" Height="35" Grid.Row="5" TextWrapping="Wrap" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <StackPanel  Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
+            <TextBlock Text="Images:" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Content="&#xE15A;" Name="images" FontFamily="Segoe MDL2 Assets" Margin="10,0,0,0" Click="images_Click"/>
+        </StackPanel>
+        
+        <Image Name="showImage" Width="200" Height="150" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,0"/>
+
+        <StackPanel  Grid.Row="1" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
+            <TextBlock Text="Books:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Content="&#xE15A;" Name="books" FontFamily="Segoe MDL2 Assets" Margin="10,0,0,0" Click="books_Click" />
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" Grid.Column="3" Grid.RowSpan="6" Width="500" Height="400" ZoomMode="Enabled" Background="DarkGray" BorderBrush="Aquamarine">
+            <ItemsControl ItemsSource="{x:Bind PdfPages}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate x:DataType="data:image">
+                        <Image Source="{x:Bind images}" Margin="0 2" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <StackPanel Grid.Row="8" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Button Content="Add book" Name="add" Click="add_Click"/>
+            <Button Content="Cancel" Name="Cancel" Click="Cancel_Click" Margin="10,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>

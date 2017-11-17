@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2d6fd91c-f799-41f3-84f3-a2718f47979c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57354/ServiceBookShop.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceBookShop.xsd" MetadataType="Schema" ID="ec1562c0-5bbb-4126-858c-db146f6f7924" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceBookShop1.xsd" MetadataType="Schema" ID="8e44ef21-b265-4327-8051-287724b47bde" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceBookShop.wsdl" MetadataType="Wsdl" ID="d157d911-8d20-4c08-9abe-16e0a7d8149c" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?wsdl" />
+    <MetadataFile FileName="ServiceBookShop2.xsd" MetadataType="Schema" ID="c5b9e7fb-5f3c-4901-8a6a-46f82a4f82c9" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceBookShop.disco" MetadataType="Disco" ID="16ec6abe-330e-40b9-9aa3-8e6f9bace5df" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?disco" />
+    <MetadataFile FileName="ServiceBookShop3.xsd" MetadataType="Schema" ID="9b38816e-6232-48ae-bcd9-d683eebd2a69" SourceId="1" SourceUrl="http://localhost:57354/ServiceBookShop.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

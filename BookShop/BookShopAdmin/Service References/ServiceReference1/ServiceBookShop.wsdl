@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceBookShop" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57354/ServiceBookShop.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57354/ServiceBookShop.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57354/ServiceBookShop.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceBookShop" />
+      <xsd:import schemaLocation="http://localhost:57354/ServiceBookShop.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceBookShop_loginBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:loginBook" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_loginBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_createLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:createLogin" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_createLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_checkEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkEmail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_checkEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFile" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getAllbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllbook" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getAllbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getUserBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserBook" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getUserBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_buyBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:buyBook" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_buyBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buyBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getAllCatalogy_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllCatalogy" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_getAllCatalogy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllCatalogyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_createBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:createBook" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBookShop_createBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createBookResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceBookShop">
+    <wsdl:operation name="loginBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/loginBook" message="tns:IServiceBookShop_loginBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/loginBookResponse" message="tns:IServiceBookShop_loginBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/createLogin" message="tns:IServiceBookShop_createLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/createLoginResponse" message="tns:IServiceBookShop_createLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/checkEmail" message="tns:IServiceBookShop_checkEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/checkEmailResponse" message="tns:IServiceBookShop_checkEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/getFile" message="tns:IServiceBookShop_getFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/getFileResponse" message="tns:IServiceBookShop_getFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/getAllbook" message="tns:IServiceBookShop_getAllbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/getAllbookResponse" message="tns:IServiceBookShop_getAllbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/getUserBook" message="tns:IServiceBookShop_getUserBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/getUserBookResponse" message="tns:IServiceBookShop_getUserBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buyBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/buyBook" message="tns:IServiceBookShop_buyBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/buyBookResponse" message="tns:IServiceBookShop_buyBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllCatalogy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/getAllCatalogy" message="tns:IServiceBookShop_getAllCatalogy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/getAllCatalogyResponse" message="tns:IServiceBookShop_getAllCatalogy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBookShop/createBook" message="tns:IServiceBookShop_createBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBookShop/createBookResponse" message="tns:IServiceBookShop_createBook_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceBookShop" type="tns:IServiceBookShop">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="loginBook">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/loginBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createLogin">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/createLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkEmail">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/checkEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFile">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/getFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllbook">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/getAllbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserBook">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/getUserBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buyBook">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/buyBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCatalogy">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/getAllCatalogy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createBook">
+      <soap:operation soapAction="http://tempuri.org/IServiceBookShop/createBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceBookShop">
+    <wsdl:port name="BasicHttpBinding_IServiceBookShop" binding="tns:BasicHttpBinding_IServiceBookShop">
+      <soap:address location="http://localhost:57354/ServiceBookShop.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

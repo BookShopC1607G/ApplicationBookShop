@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BookShop" Class="DataBookShopDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=HOANGMINH;Initial Catalog=BookShop;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BookShopConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.usersShop" Member="usersShops">
+    <Type Name="usersShop">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="passWordName" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="emailAddress" Type="System.String" DbType="NVarChar(90) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="pathimages" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="bankUser" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="usersShop_userBookShop" Member="userBookShops" ThisKey="emailAddress" OtherKey="emailAddress" Type="userBookShop" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bookShop" Member="bookShops">
+    <Type Name="bookShop">
+      <Column Name="idBook" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nameBook" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="authorBook" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="priceBook" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="descriptionBook" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="pathBook" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="pathimages" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="bookShop_userBookShop" Member="userBookShops" ThisKey="idBook" OtherKey="idBook" Type="userBookShop" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userBookShop" Member="userBookShops">
+    <Type Name="userBookShop">
+      <Column Name="idUserBookShop" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="emailAddress" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="idBook" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="usersShop_userBookShop" Member="usersShop" ThisKey="emailAddress" OtherKey="emailAddress" Type="usersShop" IsForeignKey="true" />
+      <Association Name="bookShop_userBookShop" Member="bookShop" ThisKey="idBook" OtherKey="idBook" Type="bookShop" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,38 @@
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\ApplicationInsights.config
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.dll.config
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.pdb
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.DependencyCollector.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Web.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.WindowsServer.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.ApplicationInsights.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.DependencyCollector.xml
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Web.xml
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.WindowsServer.xml
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\bin\Microsoft.ApplicationInsights.xml
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.dll
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.pdb
+D:\Hoc tap\Practice\Project Application\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.csprojResolveAssemblyReference.cache
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\ApplicationInsights.config
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.dll.config
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\ServiceBookShop.pdb
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.DependencyCollector.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Web.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.WindowsServer.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.ApplicationInsights.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.DependencyCollector.xml
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.Web.xml
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.AI.WindowsServer.xml
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\bin\Microsoft.ApplicationInsights.xml
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.csprojResolveAssemblyReference.cache
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.dll
+D:\Hoc tap\Practice\SoucreTree\BookShops\ServiceBookShop\ServiceBookShop\obj\Debug\ServiceBookShop.pdb
